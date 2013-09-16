@@ -4,7 +4,7 @@ labs-cucumber-js
 ## Clone
 First use [git](http://git-scm.com/) to clone this repo:
 
-    git clone 
+    git clone https://github.com/prystupa/labs-cucumber-js.git
     cd labs-cucumber-js
 
 ## Build
