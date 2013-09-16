@@ -1,3 +1,5 @@
+var assert = require('assert');
+
 var BrowserSteps = function() {
 	this.World = require("../support/world.js").World;
 	
@@ -16,9 +18,7 @@ var BrowserSteps = function() {
     });
 
     this.Then(/^"([^"]*)" is at the top of the search results$/, function(site, callback) {
-      // this.browser.visit('http://sqlapi.com', callback);
-      var self = this;
-      console.log(this.browser.html('div.web_result a'));
+      assert(this.browser.html().indexOf('SQLAPI++') != -1);
       callback();
     });
 };
